@@ -1,0 +1,32 @@
+.container-details-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 60px auto;
+}
+
+.container-details-item button, .container-error button{
+    display: block;
+    margin: 5px 0;
+    width: 70px;
+    height: 22px;
+    font-family: Roboto;
+    background-color: blueviolet;
+    color: white;
+}
+
+.container-detail-pokemon p{
+    margin: 5px 0;
+}
+
+.container-error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

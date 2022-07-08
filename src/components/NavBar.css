@@ -1,0 +1,142 @@
+.container-nav{
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 50px;
+    background-color: rgba(238, 37, 37, 0.973);
+}
+
+.nav-bar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+}
+
+.find-pokemon{
+    margin-right: 15px;
+}
+
+.find-pokemon input{
+    width: 140px;
+    height: 21px;
+    border-radius: 5px;  
+}
+
+.find{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: black;
+    color: red;
+}
+
+@media (min-width: 768px) {
+    .container-nav{
+        height: 70px;
+    }
+
+    .nav-bar{
+        justify-content: space-around;
+    }
+
+    .logo{
+        font-size: 1.8em;
+    }
+
+    .find-pokemon{
+        margin-right: 15px;
+    }
+
+    .find-pokemon input{
+        width: 170px;
+        height: 27px;
+        border-radius: 8px;  
+    }
+
+    .find{
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        margin-left: 10px;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 992px){
+    .container-nav{
+        height: 90px;
+    }
+
+    .nav-bar{
+        justify-content: space-around;
+    }
+
+    .logo{
+        font-size: 2.6em;
+        margin-left: 0;
+    }
+
+    .find-pokemon{
+        margin-right: 0;
+    }
+
+    .find-pokemon input{
+        width: 250px;
+        height: 32px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+
+    .find{
+        width: 100px;
+        height: 31px;
+        margin-left: 15px;
+        margin-top: 2px;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 0;
+    }
+}
+
+@media (min-width: 1290px){
+    .container-nav{
+        height: 110px;
+    }
+
+    .nav-bar{
+        justify-content: space-between;
+    }
+
+    .logo{
+        font-size: 2.6em;
+        margin-left: 70px;
+    }
+
+    .find-pokemon{
+        margin-right: 70px;
+    }
+
+    .find-pokemon input{
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        text-align:initial;
+    }
+    
+    .find{
+        width: 130px;
+        height: 38px;
+        margin-top: 0;
+        font-size: 1.1em;
+        border-radius: 10px;
+    }
+}
