@@ -48,4 +48,4 @@ También puede ver errores en la consola.*
 
 ## Autores
 
-*Emmanuel Yapura - Trabajo inicial - links github y linkedin*
+*[Emmanuel Yapura](https://www.linkedin.com/in/emmanuelyapura/) - Trabajo inicial
