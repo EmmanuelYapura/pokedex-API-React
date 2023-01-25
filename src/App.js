@@ -19,7 +19,7 @@ function App() {
 
         <Routes>
           <Route path='pokedex-API-React/' element={<PokemonList />} />
-          <Route path='/' element={<PokemonList />} />
+          {/* <Route path='/' element={<PokemonList />} /> */}
           <Route path='pokemon/:id' element={<PokemonDetail />} />
         </Routes>
 
