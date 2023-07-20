@@ -7,7 +7,7 @@ export function PokemonDetail() {
 	let { id } = useParams()
 	let url = `https://pokeapi.co/api/v2/pokemon/${id}`
 
-	const estado = GetFetch(url) //Fetch puede retornar el error
+	const estado = GetFetch(url) 
 	const { cargando, data, error } = estado
 
 	return (
