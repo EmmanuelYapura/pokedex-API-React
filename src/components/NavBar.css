@@ -13,29 +13,29 @@
 }
 
 .logo{
-    font-size: 20px;
-    text-decoration: none;
-    padding: 0 20px;
-    color: white;
+    font-size: 22px;
+    padding: 0 15px;
+    color: rgb(241, 241, 8);
 }
 
 .find-pokemon{
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .find-pokemon input{
-    width: 140px;
-    height: 21px;
+    width: 160px;
+    height: 30px;
+    padding: 5px;
     border-radius: 5px;  
 }
 
 .find{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 40%;
+    margin-left: 4px;
     background-color: black;
-    color: red;
+    color: rgb(241, 241, 8);
 }
 
 @media (min-width: 768px) {
@@ -43,12 +43,8 @@
         height: 70px;
     }
 
-    .nav-bar{
-        justify-content: space-around;
-    }
-
     .logo{
-        font-size: 1.8em;
+        font-size: 28px;
     }
 
     .find-pokemon{
@@ -56,87 +52,54 @@
     }
 
     .find-pokemon input{
-        width: 170px;
-        height: 27px;
-        border-radius: 8px;  
+        width: 180px;
+        height: 32px;
     }
 
     .find{
-        width: 40px;
-        height: 40px;
-        border: 2px solid white;
+        padding-bottom: 1px;
+        margin-top: 1px;
         margin-left: 10px;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 
 @media (min-width: 992px){
     .container-nav{
-        height: 90px;
-    }
-
-    .nav-bar{
-        justify-content: space-around;
+        height: 80px;
     }
 
     .logo{
-        font-size: 2.6em;
-        margin-left: 0;
+        padding-left: 40px;
     }
 
     .find-pokemon{
-        margin-right: 0;
-    }
-
-    .find-pokemon input{
-        width: 250px;
-        height: 32px;
-        border-radius: 5px;
-        text-align: center;
-        margin-bottom: 2px;
+        padding-right: 20px;
     }
 
     .find{
-        width: 100px;
-        height: 31px;
-        margin-left: 15px;
-        margin-top: 2px;
-        font-size: 1em;
-        border-radius: 5px;
+        width: 32px;
+        height: 32px;
+        padding-bottom: 2px;
+        border-radius: 8px;
         border: 0;
     }
 }
 
 @media (min-width: 1290px){
-    .container-nav{
-        height: 110px;
-    }
-
-    .nav-bar{
-        justify-content: space-between;
-    }
 
     .logo{
-        font-size: 2.6em;
-        margin-left: 70px;
+        font-size: 30px;
+        letter-spacing: 3px;
+        padding-left: 20px;
     }
 
     .find-pokemon{
-        margin-right: 70px;
-    }
-
-    .find-pokemon input{
-        width: 300px;
-        height: 40px;
-        border-radius: 10px;
-        text-align:initial;
+        padding: 0px;
     }
     
     .find{
-        width: 130px;
-        height: 38px;
-        margin-top: 0;
-        font-size: 1.1em;
-        border-radius: 10px;
+        padding-top: 2px;
     }
+
 }

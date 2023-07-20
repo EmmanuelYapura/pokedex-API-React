@@ -1,3 +1,12 @@
+.title-container {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.4em;
+    font-family: Roboto;
+    font-weight: bold;
+    color: black;
+}
+
 .container-grid{
     max-width: 1400px;
     margin: 0 auto;
@@ -5,13 +14,12 @@
     justify-content: center;
     grid-template-columns: repeat(2, minmax(126px,165px)); 
     grid-template-rows: repeat(10, minmax(162px, 230px));
-    grid-column-gap: 15px;
-    grid-row-gap: 22px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
 }
 
 .container-btn{
-    margin-top: 40px;
-    width: 100%;
+    margin: 10px 0;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -19,84 +27,81 @@
 }
 
 .container-btn button{
-    width: 50px;
-    height: 30px;
-    border-radius: 50%;
+    width: 70px;
+    height: 32px;
+    border-radius: 10px;
     margin-left: 5px;
     background-color: black;
-    color: rgba(238, 37, 37, 0.973);
+    color: white;
 }
 
 .btn-previus{
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .btn-next{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
-@media (min-width: 768px) {
-    .container-grid{
-        grid-template-columns: repeat(4, minmax(163px,227px)); 
-        grid-template-rows: repeat(5, minmax(199px, 300px));
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+@media (min-width: 576px) {
+    .title-container {
+        font-size: 1.6em;
+        padding-top: 10px;
     }
 
-    .container-btn{
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-evenly;
+    .container-grid{
+        grid-template-columns: repeat(3, minmax(163px,227px)); 
+        grid-template-rows: repeat(6, minmax(199px, 300px));
     }
 
     .container-btn button{
-        width: 120px;
-        border-radius: 0;
+        width: 100px;
         text-transform: uppercase;
-        margin-left: 0;
     }
-    
-    .btn-previus{
-        margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .title-container {
+        font-size: 1.8em;
     }
-    
-    .btn-next{
-        margin-left: 0;
+
+    .container-grid{
+        grid-template-columns: repeat(4, minmax(163px,227px)); 
+        grid-template-rows: repeat(4, minmax(199px, 300px));
     }
 }
 
 @media (min-width: 992px) {
+    .title-container {
+        font-size: 2.1em;
+        padding: 12px 0;
+    }
+
     .container-btn{
-        margin-top: 35px;
-        justify-content: space-around;
+        margin-top: 20px;
     }
 
     .container-btn button{
-        width: 130px;
+        width: 110px;
     }
 }
 
 @media (min-width: 1290px){
+    .title-container {
+        font-size: 2.2em;
+    }
+    
     .container-grid{
         grid-template-columns: repeat(5, minmax(235px,260px)); 
-        grid-template-rows: repeat(4, minmax(350px, 400px));
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        grid-template-rows: repeat(3, minmax(350px, 400px));
     }
 
     .container-btn{
-        margin-top: 50px;
         margin-bottom: 20px;
-        height: 80px;
         justify-content: center;
     }
 
     .container-btn button{
-        width: 140px;
-        height: 50px;
-        border-radius: 10px;
-        border: 1px solid red;
-        color: white;
-        margin: 10px;
+        height: 38px;
     }
 }

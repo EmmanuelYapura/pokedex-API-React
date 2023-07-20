@@ -1,8 +1,8 @@
 .container-item{
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 5px;
-    box-shadow: 2px 2px 10px rgba(5, 20, 219, 0.5);
+    margin-top: 2px;
+    box-shadow: 2px 2px 10px rgba(93, 88, 4, 0.807);
 }
 
 .container-item img{
@@ -11,7 +11,9 @@
 }
 
 .pokemon-name{
-    margin-top: 5px;
+    font-family: Roboto;
+    font-size: 1.2em;
+    padding-top: 5px;
     text-align: center;
 }
 
@@ -20,12 +22,13 @@
 } 
 
 #btn-details{
-    display: block;
-    margin: 5px auto;
-    width: 70px;
-    height: 22px;
     font-family: Roboto;
-    background-color: blueviolet;
+    display: block;
+    margin: 1px auto 2px;
+    width: 70px;
+    height: 20px;
+    background-color: black;
+    border-radius: 5px;
     color: white;
     font-weight: bold;
 }
@@ -36,35 +39,24 @@ a{
 
 @media (min-width: 768px) {
     #btn-details{
-        width: 80px;
-        height: 22px;
+        width: 75px;
     }
 }
 
 @media (min-width: 992px){
     #btn-details{
-        width: 90px;
-        height: 25px;
+        width: 88px;
+        height: 22px;
         text-transform: uppercase;
     }
 }
 
-@media (min-width: 1290px){
-    .container-item{
-        border: 1px solid black;
-        border-radius: 10px;
-        margin-top: 5px;
-        box-shadow: 2px 2px 10px rgba(5, 20, 219, 0.5);
-    }
-    
-    
+@media (min-width: 1290px){    
     .pokemon-name{
+        font-size: 1.3em;
+        letter-spacing: 1.2px;
         text-transform: uppercase;
-        font-size: 2em;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
+    }    
     
     .container-flex{
         display: flex;
@@ -74,11 +66,11 @@ a{
     
     .container-details{
         margin-top: -10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .container-details p{
-        font-size: 19px;
+        font-size: 17px;
         font-family: sans-serif;
     }
 

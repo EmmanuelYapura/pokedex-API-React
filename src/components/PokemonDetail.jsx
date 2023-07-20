@@ -11,7 +11,7 @@ export function PokemonDetail() {
 	const { cargando, data, error } = estado
 
 	return (
-		<div>
+		<div className='container padding'>
 			{
 				!cargando ?
 					(
@@ -28,14 +28,14 @@ export function PokemonDetail() {
 								<p>Attack: <b>{data.stats[2].base_stat}</b></p>
 							</div>
 
-							<Link to={'/pokedex-API-React'}>
+							<Link to={'/'}>
 								<button>Volver</button>
 							</Link>
 						</div>
 					)
 					:
 					error ?
-						<div className='container-error'>
+						<div className='container-error padding'>
 							<h1>El id o pokemon ingresado no existe!</h1>
 							<Link to={'/'}>
 								<button>Volver</button>

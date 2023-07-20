@@ -14,7 +14,8 @@ export function PokemonList() {
 			<div>Cargando...</div>
 			:
 			(
-				<>
+				<div className='container'>
+       				<h1 className='title-container'>Pokemon's List</h1>
 					<div className='container-grid'>
 						{data.results.map(pokemon => (
 							<PokemonItem key={pokemon.name} url={pokemon.url} />
@@ -34,7 +35,7 @@ export function PokemonList() {
 							console.log('No hay elementos posteriores')
 						}} > Next </button>
 					</div>
-				</>
+				</div>
 			)
 	)
 }

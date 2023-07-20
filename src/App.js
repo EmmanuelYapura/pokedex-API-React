@@ -7,28 +7,14 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
 
-
   return (
     <div className="App">
-      <header>
-        <NavBar />
-      </header>
-
-      <div className='container'>
-        <h1 className='title-container'>Pokemon's List</h1>
-
-        <Routes>
-          <Route path='pokedex-API-React/' element={<PokemonList />} />
-          {/* <Route path='/' element={<PokemonList />} /> */}
-          <Route path='pokemon/:id' element={<PokemonDetail />} />
-        </Routes>
-
-      </div>
-
-      <footer>
-        <Footer />
-      </footer>
-
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<PokemonList />} />
+        <Route path='pokemon/:id' element={<PokemonDetail />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
